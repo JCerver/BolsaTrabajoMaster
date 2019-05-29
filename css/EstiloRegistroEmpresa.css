@@ -1,0 +1,222 @@
+body{
+    /*indicamos la ruta con url, los .. sirven para salir de la carpeta css donde nos hallamos y ubicarnos en img donde esta nuestra imagen*/
+    background-image:  url("../imagenes/back.png")
+}
+
+/*Cambiar color de fondo  a jumbotron*/
+.jumbotron{
+    background-color: #cc99ff;
+    /*Cambiar color de letra*/
+    color: white;
+      opacity: 0.8;
+}
+
+.panel-heading{
+    background-color: deepskyblue !important;
+    color:  white !important;
+}
+
+/*Pseudocalses o pseudonormas de los enlaces se encuentran los siguientes 
+:link  indica el aspecto mque debe tener un enlace, asi tal cual, sin pasarle el rato por encima, es decir , por default
+:visited indica el aspecto de los enlaces que no estan seleccionados pero ya hemos visitado una vez, ejemplo si no hemos entrado ahi es como blanco, pero si ya hemos entrado es como morado
+:hover indica lo que pasa cuando el raton pasa por encima de un enlace, darle estilo a la pagina aplica solo a ordenadores
+:active es el ascpecto que tendra un enlace cuando esta activo, como si dejara pulsado el boton o en lo que carga*/
+
+/*PARA QUE FUNCIONE LOS ESTILOS EN UN ENLACE, DEBO PONER OBLIGATORIAMENTE LAS 4 PSEUDONORMAS DE LOS ENLACES*/
+/*Pude haber puesto tambien .navbar-brand:link,  p, #navbar y se aplicara a esos elementos y identificadores tambien la regla a definir*/
+/*resaltar un enlace*/
+.navbar-brand:link,  .navbar-brand:visited{
+    color: deepskyblue !important;
+}
+.navbar-brand:hover,  .navbar-brand:active{
+    color: white !important;
+}
+
+.dropdown-toggle:link, .dropdown-toggle:visited{
+    color: white !important;
+}
+
+.dropdown-toggle:hover{
+     color: deepskyblue !important;
+}
+
+.dropdown-toggle:active{
+     color: deepskyblue !important;
+}
+
+
+/*Cmabiar color de la barra*/
+.navbar{
+    background-color: #2b2b2b;
+}
+
+/*Cambiar los enlaces de la barra*/
+/*+++++++++++++ACCEDER A ELEMENTOS MUY ESPECIFICOS+++++++++++++++*/
+/*si pongo 
+p{
+aplicaria PARA TODOS LOS COMPONENTES p
+}
+
+si quiero que SOLAMENTE SE APLIQUEN A LOS p dentro de un div se pondria
+div p{
+significa que cualquier p dentro de un div cumplira las normas que estan descritas aqui.
+Es decir se lee de derecha a izquierda, los elementos que estan dentro de la drecha estan dentro de la izquierda
+Ej: nvabar div p --todos los parrafos dentro de un div en una navbar se afectaran los lo decrito aqui
+}
+*/
+#navbar li a:link,#navbar li a:visited {
+     color: white !important;
+}
+
+#navbar li a:hover,#navbar li a:active {
+    color: deepskyblue !important;
+}
+
+#barras li a:link,#barras li a:visited {
+     color: white !important;
+}
+
+#barras li a:hover,#barras li a:active {
+    color: deepskyblue !important;
+}  
+
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+/*OTRAAA*/
+ /* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+} 
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2b2b2b;
+   color: white;
+   text-align: center;
+}
+
+.tableColor {
+    background-color:#000000;
+} 
+
+.letra {
+    color: white;
+} 

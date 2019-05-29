@@ -1,0 +1,4 @@
+body{
+    /*indicamos la ruta con url, los .. sirven para salir de la carpeta css donde nos hallamos y ubicarnos en img donde esta nuestra imagen*/
+    background-image:  url("../imagenes/back.png")
+}
