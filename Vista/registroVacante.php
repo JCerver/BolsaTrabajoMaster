@@ -14,7 +14,7 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Incrementa tu equipo a traves de una oferta de trabajo</a>
+      <a class="navbar-brand" href="registroVacante.php">Incrementa tu equipo a traves de una oferta de trabajo</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-1">
       <div class="nav navbar-nav navbar-right">

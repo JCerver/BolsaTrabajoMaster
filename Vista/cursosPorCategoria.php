@@ -25,10 +25,10 @@
                     <div class="collapse navbar-collapse" id="navbar-1">
                         <ul class="nav navbar-nav">
                             
-                            <li><a href=#>Candidatos</a></li>
-                            <li><a href=#>Empresas</a></li>
-                            <li><a href=#>Salarios</a></li>
-                            <li><a href=#>Cursos</a></li>
+                            <!--<li><a href=#>Candidatos</a></li>
+                            <li><a href=#>Empresas</a></li>-->
+                            <li><a href="Home/HomeCandidato.php">Vacantes</a></li>
+                            <li><a href="Cursos.php">Cursos</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                         
@@ -36,11 +36,11 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">  <?php echo "{$_SESSION["usuarioCan"]}"; ?> <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                     <li><a href="a.html">Mi perfil de candidato</a></li>
-                                     <li><a href="a.html">Editar curriculum</a></li>
-                                    <li><a href="a.html">Configuraci&oacute;n</a></li>
+                                     <li><a href="modificarCandidato.php">Mi perfil de candidato</a></li>
+                                     <li><a href="modificarCurriculum.php">Editar curriculum</a></li>
+                                    <!--<li><a href="#">Configuraci&oacute;n</a></li>-->
                                     <li class="divider"></li>
-                                    <li><a href="../../Controlador/ControladorSesion.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar sesi&oacute;n</a></li>
+                                    <li><a href="../Controlador/ControladorSesion.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar sesi&oacute;n</a></li>
                                 </ul>
                             </li>
                         </ul>

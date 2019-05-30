@@ -39,7 +39,7 @@ $row=$resultado->fetch_assoc();
                         <ul class="nav navbar-nav">
                             
                              <li><a href="Home/HomeCandidato.php">Vacantes</a></li>
-                            <li><a href="../Cursos.php">Cursos</a></li>
+                            <li><a href="Cursos.php">Cursos</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                         
@@ -49,7 +49,7 @@ $row=$resultado->fetch_assoc();
                                 <ul class="dropdown-menu">
                                     <li><a href="modificarCandidato.php">Mi perfil de candidato</a></li>
                                     <li><a href="modificarCurriculum.php">Editar curriculum</a></li>
-                                    <li><a href="#">Configuraci&oacute;n</a></li>
+                                    <!--<li><a href="#">Configuraci&oacute;n</a></li>-->
                                     <li class="divider"></li>
                                     <li><a href="../Controlador/ControladorSesion.php">
                                     <span class="glyphicon glyphicon-log-in"></span> Cerrar sesi&oacute;n</a></li>

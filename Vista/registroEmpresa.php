@@ -14,7 +14,7 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Le damos la bienvenida a tu empresa</a>
+      <a class="navbar-brand" href="registroEmpresa.php">Le damos la bienvenida a tu empresa</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-1">

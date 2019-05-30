@@ -22,7 +22,7 @@ $idE = $_SESSION["usuarioID"];
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Manten Actualizada La Informaci&oacute;n De Tu Empresa</a>
+                <a class="navbar-brand" href="modificaEmpresa.php">Manten Actualizada La Informaci&oacute;n De Tu Empresa</a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-1">

@@ -19,7 +19,7 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Capacita a tus futuros empleados a traves de diversos cursos</a>
+      <a class="navbar-brand" href="registroCurso.php">Capacita a tus futuros empleados a traves de diversos cursos</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-1">

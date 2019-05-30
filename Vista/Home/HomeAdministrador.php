@@ -32,9 +32,9 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">  <?php echo "{$_SESSION["usuarioAdmin"]}"; ?> <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                     <li><a href="a.html">Mi perfil de administrador</a></li>
-                                     <li><a href="a.html">Editar curriculum</a></li>
-                                    <li><a href="a.html">Configuraci&oacute;n</a></li>
+                                     <!--<li><a href="#">Mi perfil de administrador</a></li>
+                                     <li><a href="#">Editar curriculum</a></li>
+                                    <li><a href="#">Configuraci&oacute;n</a></li>-->
                                     <li class="divider"></li>
                                     <li><a href="../../Controlador/ControladorSesion.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar sesi&oacute;n</a></li>
                                 </ul>

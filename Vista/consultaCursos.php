@@ -19,7 +19,7 @@ $id = $_SESSION["usuarioID"];
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Cursos Registrados Actualmente</a>
+      <a class="navbar-brand" href="consultaCursos.php">Cursos Registrados Actualmente</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbar-1">

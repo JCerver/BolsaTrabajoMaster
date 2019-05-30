@@ -16,7 +16,7 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Creaci&oacute;n de cuenta</a>
+      <a class="navbar-brand" href="registroCandidato.php">Creaci&oacute;n de cuenta</a>
     </div>
 
     <ul id="barra" class="nav navbar-nav navbar-right">

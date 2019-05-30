@@ -21,7 +21,7 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Modifica tu curriculum.</a>
+      <a class="navbar-brand" href="modificarCurriculum.php">Modifica tu curriculum.</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-1">
       <div class="nav navbar-nav navbar-right">

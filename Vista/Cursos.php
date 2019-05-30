@@ -32,11 +32,11 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">  <?php echo "{$_SESSION["usuarioCan"]}"; ?> <span class="caret"></span>
                                 </a>
                                 <ul class="dropdown-menu">
-                                     <li><a href="../modificarCandidato.php">Mi perfil de candidato</a></li>
-                                    <li><a href="../modificarCurriculum.php">Editar curriculum</a></li>
+                                     <li><a href="modificarCandidato.php">Mi perfil de candidato</a></li>
+                                    <li><a href="modificarCurriculum.php">Editar curriculum</a></li>
                                   
                                     <li class="divider"></li>
-                                    <li><a href="../../Controlador/ControladorSesion.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar sesi&oacute;n</a></li>
+                                    <li><a href="../Controlador/ControladorSesion.php"><span class="glyphicon glyphicon-log-in"></span> Cerrar sesi&oacute;n</a></li>
                                 </ul>
                             </li>
                         </ul>

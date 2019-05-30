@@ -17,7 +17,7 @@
 <nav class="navbar navbar-default navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Ingresa tus mejores cualidades.</a>
+      <a class="navbar-brand" href="registroCurriculum.php">Ingresa tus mejores cualidades.</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-1">
       <div class="nav navbar-nav navbar-right">
