@@ -39,7 +39,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                      <li><a href="../registroCurso.php"><span class=" glyphicon glyphicon-plus"></span> Agregar un nuevo curso</a></li>
-                                     <li><a href="#"><span class="glyphicon glyphicon-inbox"></span> Cursos publicados</a></li>
+                                   <!--  <li><a href="#"><span class="glyphicon glyphicon-inbox"></span> Cursos publicados</a></li>  -->
                                      <li class="divider"></li>
                                      <li><a href="../consultaCursos.php"><span class="glyphicon glyphicon-cog"></span>  Administraci&oacute;n de cursos</a></li>
 

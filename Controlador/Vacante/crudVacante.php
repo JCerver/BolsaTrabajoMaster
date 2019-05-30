@@ -26,7 +26,7 @@ echo "$descripcion";
 echo "$fecha";
 */
 
-$resultado = addVacante($id_empresa, $nombre, $puesto,$salario,$horario,$ubicacion,$requisitos,$descripcion,$fecha);
+$resultado = addVacante($id_empresa,$nombre, $puesto,$salario,$horario,$ubicacion,$requisitos,$descripcion,$fecha);
 
 if ($resultado) {
 	//echo "Vacante insertada correctamente";

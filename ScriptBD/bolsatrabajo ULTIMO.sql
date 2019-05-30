@@ -30,7 +30,7 @@ DELIMITER $$
 -- Procedimientos
 --
 DROP PROCEDURE IF EXISTS `getAllVacantes`$$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `getAllVacantes` ()  select v.id_vacante,v.fk_id_empresa,v.vac_nombre,v.vac_salario,v.vac_horario,v.vac_requisitos,v.vac_descripcion,v.vac_fechaPublicado,e.emp_nombre,e.emp_ciudad from tbl_vacante v inner join tbl_empresa e on v.fk_id_empresa=e.id_empresa$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `getAllVacantes` ()  select v.id_vacante,v.fk_id_empresa,v.vac_nombre,v.vac_puesto,v.vac_salario,v.vac_horario,v.vac_requisitos,v.vac_descripcion,v.vac_fechaPublicado,e.emp_nombre,e.emp_ciudad from tbl_vacante v inner join tbl_empresa e on v.fk_id_empresa=e.id_empresa$$
 
 DROP PROCEDURE IF EXISTS `insertarEmpresa`$$
 CREATE DEFINER=`root`@`localhost` PROCEDURE `insertarEmpresa` (`emp_nombre` VARCHAR(100), `emp_rfc` VARCHAR(100), `emp_direccion` VARCHAR(100), `emp_ciudad` VARCHAR(50), `emp_telefono` VARCHAR(100), `emp_giroEmpresarial` VARCHAR(60), `emp_descripcion` VARCHAR(350), `emp_email` VARCHAR(100), `emp_username` VARCHAR(100), `emp_contrasena` VARCHAR(100), `usr_tipo` VARCHAR(30))  insert into tbl_empresa(emp_nombre,emp_rfc,emp_direccion,emp_ciudad,emp_telefono,emp_giroEmpresarial,emp_descripcion,emp_email,emp_username,emp_contrasena,usr_tipo) values (emp_nombre,emp_rfc,emp_direccion,emp_ciudad,emp_telefono,
@@ -228,6 +228,9 @@ CREATE TABLE IF NOT EXISTS `tbl_vacante` (
   KEY `fk_id_empresa` (`fk_id_empresa`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
+select*from tbl_vacante;
+
+call getAllVacantes();
 --
 -- Volcado de datos para la tabla `tbl_vacante`
 --
@@ -243,8 +246,8 @@ COMMIT;
 
 DROP PROCEDURE IF EXISTS getVacantePorID;
 CREATE PROCEDURE getVacantePorID(clave int)
-select v.id_vacante,v.fk_id_empresa,v.vac_nombre,v.vac_salario,v.vac_horario,v.vac_ubicacion,v.vac_requisitos,v.vac_descripcion,v.vac_fechaPublicado,e.emp_nombre,e.emp_ciudad,e.emp_direccion,e.emp_giroEmpresarial,e.emp_descripcion,e.emp_telefono,e.emp_email  from tbl_vacante v inner join tbl_empresa e on v.fk_id_empresa=e.id_empresa where v.id_vacante=clave;
-call getVacantePorID(2);
+select v.id_vacante,v.fk_id_empresa,v.vac_nombre,v.vac_puesto,v.vac_salario,v.vac_horario,v.vac_ubicacion,v.vac_requisitos,v.vac_descripcion,v.vac_fechaPublicado,e.emp_nombre,e.emp_ciudad,e.emp_direccion,e.emp_giroEmpresarial,e.emp_descripcion,e.emp_telefono,e.emp_email  from tbl_vacante v inner join tbl_empresa e on v.fk_id_empresa=e.id_empresa where v.id_vacante=clave;
+call getVacantePorID(7);
 
 DROP PROCEDURE IF EXISTS insertarCurso;
  CREATE PROCEDURE insertarCurso(
@@ -417,7 +420,7 @@ SELECT * FROM t1 WHERE column1 = (SELECT column1 FROM t2);
 call getVacantePorVacanteEmpresa('%rh%','%sys%');
  
 
-
+ 
 SELECT * FROM tbl_vacante WHERE vac_fechaPublicado BETWEEN DATE_SUB(NOW(), INTERVAL 3 day) AND NOW(); 
  
  select * from tbl_vacante;
