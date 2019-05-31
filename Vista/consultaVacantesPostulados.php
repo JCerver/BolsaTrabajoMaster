@@ -67,7 +67,7 @@ $id = $_SESSION["usuarioID"];
                 <td><?php echo $row['Correo'] ?></td>
                 <td><?php echo $row['Telefono'] ?></td>
                 <td><?php echo $row['Puesto'] ?></td>
-                <td><a class="btn btn-primary" href='https:wa.me/5214773962394' role="button">contactar</a></td>
+                <td><a class="btn btn-primary" href='https:wa.me/521<?php echo $row['Telefono']?>' role="button">contactar</a></td>
             </tr>
             <?php }} ?>
     </table>
